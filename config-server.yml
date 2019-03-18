@@ -7,8 +7,11 @@ spring:
   profiles: local
 
 eureka:
-  server:
-    port: 9091
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
 
 msapconfig:
   greeting: "welcome to local server"
