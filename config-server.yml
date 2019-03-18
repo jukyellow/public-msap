@@ -1,4 +1,4 @@
-msaconfig:
+msapconfig:
   greeting: "hello"
   
 ---
@@ -6,15 +6,18 @@ msaconfig:
 spring:
   profiles: local
 
-msaconfig:
+msapconfig:
   greeting: "welcome to local server"
+  eureka:
+    server:
+      port: 9091
 
 ---
 
 spring:
   profiles: dev
 
-msaconfig:
+msapconfig:
   greeting: "welcome to dev server"
 
 ---
@@ -22,7 +25,7 @@ msaconfig:
 spring:
   profiles: test
   
-msaconfig:
+msapconfig:
   greeting: "welcome to test server"
 
 ---
@@ -30,7 +33,7 @@ msaconfig:
 spring:
   profiles: staging
   
-msaconfig:
+msapconfig:
   greeting: "welcome to staging server"
 
 ---
@@ -38,5 +41,5 @@ msaconfig:
 spring:
   profiles: prod
   
-msaconfig:
+msapconfig:
   greeting: "welcome to prod server"
