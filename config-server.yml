@@ -6,11 +6,12 @@ msapconfig:
 spring:
   profiles: local
 
+eureka:
+  server:
+    port: 9091
+
 msapconfig:
   greeting: "welcome to local server"
-  eureka:
-    server:
-      port: 9091
 
 ---
 
