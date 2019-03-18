@@ -8,8 +8,9 @@ spring:
 
 msapconfig:
   greeting: "welcome to local server"
-  db-ip: localhost
-  db-port: 9999
+  db:
+    ip: localhost
+    port: 9999
 
 ---
 
