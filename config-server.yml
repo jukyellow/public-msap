@@ -1,6 +1,8 @@
 msapconfig:
   greeting: "hello"
-  
+  db:
+    ip: 192.168.0.16
+    port: 9999
 ---
 
 spring:
