@@ -1,8 +1,8 @@
 msapconfig:
   greeting: "hello"
   db:
-    ip: 192.168.0.16
-    port: 9999
+    ip: aaa
+    port: bbb
 
 ---
 
@@ -12,8 +12,8 @@ spring:
 msapconfig:
   greeting: "welcome to local server"
   db:
-    ip: 192.168.0.16
-    port: 9999
+    ip: AAAA
+    port: bbbb
 
 ---
 
@@ -22,9 +22,6 @@ spring:
 
 msapconfig:
   greeting: "welcome to dev server"
-  db:
-    ip: 192.168.0.16
-    port: 9999
 
 ---
 
@@ -33,9 +30,6 @@ spring:
   
 msapconfig:
   greeting: "welcome to staging server"
-  db:
-    ip: 192.168.0.16
-    port: 9999
 
 ---
 
@@ -44,6 +38,4 @@ spring:
   
 msapconfig:
   greeting: "welcome to prod server"
-  db:
-    ip: 192.168.0.16
-    port: 9999
+
