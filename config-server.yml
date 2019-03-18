@@ -3,6 +3,7 @@ msapconfig:
   db:
     ip: 192.168.0.16
     port: 9999
+
 ---
 
 spring:
@@ -21,14 +22,9 @@ spring:
 
 msapconfig:
   greeting: "welcome to dev server"
-
----
-
-spring:
-  profiles: test
-  
-msapconfig:
-  greeting: "welcome to test server"
+  db:
+    ip: 192.168.0.16
+    port: 9999
 
 ---
 
@@ -37,6 +33,9 @@ spring:
   
 msapconfig:
   greeting: "welcome to staging server"
+  db:
+    ip: 192.168.0.16
+    port: 9999
 
 ---
 
@@ -45,3 +44,6 @@ spring:
   
 msapconfig:
   greeting: "welcome to prod server"
+  db:
+    ip: 192.168.0.16
+    port: 9999
