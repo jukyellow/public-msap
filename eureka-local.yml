@@ -1,0 +1,8 @@
+spring:
+  profiles: local
+
+msapconfig:
+  greeting: "welcome to local server"
+  db:
+    ip: AAAA
+    port: bbbb
